@@ -7,16 +7,18 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Webapp</name>
   <url>http://maven.apache.org</url>
-  <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-compiler-plugin</artifactId>
-    <version>3.8.1</version>
-    <configuration>
-        <source>${java.version}</source>
-        <target>${java.version}</target>
-        <forceJavacCompilerUse>true</forceJavacCompilerUse>
-    </configuration>
-</plugin>
+  <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+            <source>${java.version}</source>
+            <target>${java.version}</target>
+            <forceJavacCompilerUse>true</forceJavacCompilerUse>
+        </configuration>
+      </plugin>
+    </plugins>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
